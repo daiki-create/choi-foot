@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b059e55d-0716-4ac2-8df2-dc02df6fecf3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/320.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/540.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/coach/payment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/lesson/cancel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/message/send-coach-message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/mypage/edit-prof.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/mypage/update-coach.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/mypage/update-student.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/retire/delete-account.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/retire/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/search/index.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hsATiLNUM14CMZ2UO4rxBQ6eId" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PhpstormProjects\choi-foot\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PhpstormProjects\choi-foot\img" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="pin" />
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b059e55d-0716-4ac2-8df2-dc02df6fecf3" name="Default Changelist" comment="" />
+      <created>1600789444643</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600789444643</updated>
+      <workItem from="1600789447602" duration="31000" />
+      <workItem from="1600969454876" duration="78000" />
+      <workItem from="1600978277867" duration="1907000" />
+      <workItem from="1601013774301" duration="27981000" />
+      <workItem from="1601294966100" duration="38379000" />
+      <workItem from="1601510868925" duration="1560000" />
+      <workItem from="1601518596871" duration="7296000" />
+      <workItem from="1601538654810" duration="2284000" />
+      <workItem from="1601541457232" duration="153072000" />
+      <workItem from="1602572615616" duration="37271000" />
+      <workItem from="1603293424970" duration="47192000" />
+      <workItem from="1603678487058" duration="4888000" />
+      <workItem from="1604305899299" duration="2133000" />
+      <workItem from="1604485633202" duration="13406000" />
+      <workItem from="1604643190275" duration="1917000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="804" y="118" key="FileChooserDialogImpl" timestamp="1604582965855">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="804" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604582965855" />
+    <state x="859" y="290" key="NewPhpFileDialog" timestamp="1603640756993">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="859" y="290" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1603640756993" />
+    <state x="680" y="166" width="672" height="677" key="run.anything.popup" timestamp="1604643691831">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="680" y="166" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1604643691831" />
+    <state x="544" y="64" width="672" height="678" key="search.everywhere.popup" timestamp="1603421560824">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="544" y="64" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1603421560824" />
+  </component>
+</project>

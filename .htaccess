@@ -1,0 +1,11 @@
+
+
+DirectoryIndex index.html index.htm index.shtml index.php index.cgi
+Options -Indexes
+AuthUserFile /home/whitecattle2/www/choi-foot/.htpasswd
+AuthType Basic
+AuthName "Web access"
+Satisfy any
+Order deny,allow
+
+
