@@ -1,0 +1,282 @@
+body{
+    top: 0 !important;
+}
+.main{
+    min-width: 100%;
+}
+.right{
+    display: none;
+}
+.left{
+    width: 100%;
+    min-width: 100%;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 200px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block;
+    left: 0;
+}
+.apply-btn,.form-btn{
+    width: 70%;
+    margin: 30px 15% 30px 15%;
+}
+.apply-btn:hover,.form-btn:hover{
+    opacity: 0.7;
+}
+.message{
+    margin-top: 100px;
+    text-align: center;
+}
+/*-----------------------------------------------------------------------------*/
+/*ヘッダー*/
+.header{
+    padding-bottom: 5px;
+    top: 0 !important;
+}
+.nav{
+    display: block;
+}
+/*ナビ上*/
+.top{
+    padding-right: 0;
+}
+.title{
+    margin-right: 0;
+    font-size: 28px;
+}
+.login{
+    position: absolute;
+    right: 5%;
+    top: 10px;
+}
+.menu-content{
+    left: calc(-100% - 200px);
+}
+.hamburger:hover .menu-content{
+    transform: translate3d(210px,0,0);
+    transition: 1s;
+}
+.search-btn{
+    top: 50px;
+}
+.search-txt{
+    top:60px;
+}
+/*ナビ下*/
+.nav-ul{
+    display: none;
+}
+.nav-ul-sp{
+    padding-left: 0;
+    white-space: nowrap;
+}
+.nav-icon{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+/*-----------------------------------------------------------------------------*/
+/*TOPページ*/
+.top-parent{
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 80px;
+}
+.coach-card{
+    width: 49%;
+    padding-left: 0;
+}
+/*-----------------------------------------------------------------------------*/
+/*コーチページ*/
+.coach-img-parent{
+    margin-top: 80px;
+}
+.coach-info{
+    width: 90%;
+    margin-left: 5%;
+}
+.appointment{
+    width: 80%;
+    margin-left: 5% !important;
+}
+
+/*コーチページ　フォーム*/
+.coach-form{
+    width: 90% !important;
+    margin-left: 5% !important;
+    margin-top: 100px !important;
+}
+
+/*コーチページ　確認*/
+.confirm-parent{
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 120px;
+}
+
+.coach-done-parent{
+    margin-top: 100px;
+    white-space: normal;
+    width: 90%;
+    margin-left: 5%;
+}
+/*-----------------------------------------------------------------------------*/
+/*チャットポストページ*/
+.chat-parent{
+    width: 85%;
+    margin-left: 5%;
+    margin-top: 100px;
+}
+/*-----------------------------------------------------------------------------*/
+/*チャットページ*/
+.messages{
+    margin-bottom: 50px;
+}
+.message-form{
+    width: 100%;
+    bottom: 70px;
+}
+.message-parent{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+}
+.message-item{
+    width: 60%;
+    vertical-align: bottom;
+}
+.message-btn{
+    width: 20%;
+    vertical-align: bottom;
+}
+/*-----------------------------------------------------------------------------*/
+/*マイページ*/
+.mypage-parent{
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 100px;
+}
+.left-img img{
+    height: 200px;
+}
+.right-img video,.right-img img{
+    height: 100px;
+}
+.prof-parent{
+    width: 100%;
+}
+
+.mypage-label{
+    width: 40%;
+    margin-left: 5%;
+}
+.mypage-form-item{
+    width: 50%;
+}
+.mgn-l-5per{
+    margin-left: 5%;
+}
+/*サブ画像編集ページ*/
+.edit-sub-parent{
+    margin-top: 100px;
+    width: 90%;
+    margin-left: 5%;
+}
+.edit-sub{
+    width: 100%;
+    display: block;
+}
+.pc-br{
+    display: none;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*レッスンページ*/
+.lesson-parent{
+    margin-top: 100px;
+}
+.lesson-card{
+    margin-left: 5%;
+    width: 85%;
+    max-width: 85%;
+    padding:10px;
+}
+.lesson-fee{
+    margin-left: 10px;
+}
+/*-----------------------------------------------------------------------------*/
+/*登録ページ*/
+.about-parent{
+    white-space: normal;
+    width: 90%;
+    margin-left: 5%;
+}
+.about-form{
+    width: 90%;
+}
+.pin-form,
+.personal-form,
+.confirm-form,
+.regi-done-parent{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
+    white-space: normal;
+    font-size: 12px;
+}
+/*-----------------------------------------------------------------------------*/
+/*お問い合わせページ*/
+.contact-parent{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+}
+.contact-done-parent{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+}
+/*-----------------------------------------------------------------------------*/
+/*プライバシーポリシーページ*/
+.terms{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+}
+/*-----------------------------------------------------------------------------*/
+/*検索結果ページ*/
+.search-parent{
+    margin-top: 100px;
+}
+/*-----------------------------------------------------------------------------*/
+/*退会ページ*/
+.retire-parent{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 100px;
+}
+/*-----------------------------------------------------------------------------*/
+/*ログインページ*/
+.login-parent{
+    margin-top: 100px;
+}
+.login-box{
+    width: 90% !important;
+    margin-left: 5% !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.make-new-parent{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0 !important;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*フッター*/
+.footer {
+    display: none;
+}

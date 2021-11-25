@@ -1,0 +1,793 @@
+
+body{
+    width: 100%;
+    margin: 0;
+    background-color: rgba(220, 220, 220, 0.3);
+    font-family: Lato,sans-serif;
+}
+
+.main{
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    white-space: nowrap;
+}
+.left{
+    width: 70%;
+    margin: 200px 5% 400px 5% !important;
+    display: inline-block;
+    vertical-align: top;
+}
+.right{
+    width: 20%;
+    margin-top: 100px;
+    display: inline-block;
+}
+.font15px{
+    font-size: 15px;
+}
+.ta-center{
+    text-align: center;
+}
+.ws-normal{
+    white-space: normal;
+}
+.ws-pw{
+    white-space: pre-wrap;
+}
+.apply-btn,.form-btn{
+    width: 80% !important;
+    margin: 30px 0 30px 10% !important;
+    border-radius: 10px;
+    border: none;
+    background-color: #008000	;
+    font-weight: 600;
+    font-size: larger;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.apply-btn:hover,.form-btn:hover{
+    opacity: 0.7;
+}
+.message{
+    color: blue;
+}
+/*-----------------------------------------------------------------------------*/
+/*ヘッダー*/
+.header{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(200,200,200,0.3);
+}
+.nav{
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    background-color: rgba(240,240,240,0.7);
+    text-shadow: 1px 1px gray;
+}
+/*ナビ上*/
+.top{
+    padding: 1% 5% 0 1%;
+}
+.hamburger{
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.top-hamburger{
+    width: 100%;
+    height: 3px;
+    background-color: lightgreen;
+    position: absolute;
+    top:0 ;
+    left: 0;
+}
+.middle-hamburger{
+    width: 100%;
+    height: 3px;
+    background-color: lightgreen;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.bottom-hamburger{
+    width: 100%;
+    height: 3px;
+    background-color: lightgreen;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.menu-content{
+    position: absolute;
+    left: calc(-100% - 220px);
+    z-index: 2;
+    background-color: rgba(220, 220, 220, 0.8);
+    width: 200px;
+    height: 1000px;
+    padding-left: 10px;
+}
+.hamburger:hover .menu-content{
+    transform: translate3d(220px,0,0);
+    transition: 1s;
+}
+.menu-item{
+    list-style: none;
+    padding-bottom: 10%;
+}
+.menu-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-shadow: 1px 1px gray;
+}
+.menu-item a:hover{
+    font-weight: bold;
+}
+.title{
+    color: lightgreen;
+    font-weight: 900;
+    font-size: 30px;
+    text-shadow: gray 1px 1px;
+    display: inline-block;
+    margin: auto 5% auto 10%;
+}
+.login{
+    display: inline-block;
+    border-radius:  5px;
+    background-color: lightgreen;
+    border: none;
+}
+.login:hover{
+    opacity: 0.7;
+}
+.login a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-weight: 100;
+}
+.search{
+    position: relative;
+    float: right;
+}
+.search-sp{
+    display: none;
+}
+.search-txt{
+    background:none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: lightgreen 3px solid;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 100%;
+    font-weight: bold;
+    font-size: large;
+}
+.search-btn{
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    top: calc(50% - 0px);
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.search-btn::before{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    top: calc(50% - 9px);
+    left: calc(50% - 9px);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px lightgreen;
+}
+.search-btn::after{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 6px;
+    top: calc(50% + 6px);
+    left: calc(50% + 2px);
+    border-top: solid 2px lightgreen;
+    transform: rotate(45deg);
+}
+
+/*ナビ下*/
+.nav-ul{
+    width: 100%;
+    white-space: nowrap;
+    padding: 0;
+}
+.nav-item{
+    width: 25%;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+.nav-item a:hover{
+    opacity: 0.7;
+}
+.nav-item a{
+    font-weight: 900;
+    text-decoration: none;
+    color: lightgreen;
+}
+.nav-icon{
+    object-fit: cover;
+    width: 25px;
+    height: 25px;
+}
+/*-----------------------------------------------------------------------------*/
+/*TOP*/
+.top-parent{
+    white-space: normal;
+}
+.coach-card{
+    position: relative;
+    list-style: none;
+    width: 30%;
+    display: inline-block;
+    padding-left: 1%;
+}
+.coach-prof{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.prefecture{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px gray;
+}
+.fee{
+    position: absolute;
+    top: 160px;
+    left: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px gray;
+}
+.comment{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*-----------------------------------------------------------------------------*/
+/*コーチページ*/
+.locate{
+    font-weight: 600;
+}
+.coach-info{
+    width: 80%;
+    margin-left: 10%;
+}
+.coach-info legend{
+    border-radius: 20px;
+}
+.appointment{
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px gray;
+    padding: 20px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
+}
+.week{
+    height: 30px;
+    font-weight: 700;
+}
+/*コーチページ フォーム*/
+.coach-form{
+    white-space: nowrap;
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-top: 30px;
+    white-space: normal;
+}
+.coach-form-item-left{
+    width: 100% !important;
+    display: block;
+}
+.coach-form-item-right{
+    width: 50% !important;
+    display: block;
+}
+.coach-form-date{
+    width: 30% !important;
+    border-top: none; border-left: none; border-right: none;
+    background: none;
+}
+.coach-form-time{
+    width: 30% !important;
+    border-top: none; border-left: none; border-right: none;
+    background: none;
+}
+.coach-form-util{
+    width: 90% !important;
+    border-top: none; border-left: none; border-right: none;
+    background: none;
+}
+.coach-form-area{
+    width: 100%;
+    border-radius: 20px;
+}
+
+/*コーチページ　確認*/
+.confirm-parent{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px gray;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.confirmation{
+    font-weight: 600;
+    white-space: normal;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+/*マイページ*/
+.left-img{
+    width: 45%;
+    display: inline;
+    margin-left: 5%;
+}
+.right-img{
+    width: 50%;
+    display: inline;
+    float: right;
+    white-space: normal;
+}
+.main-img{
+    width: 43%;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.sub-img{
+    width: 48%;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.prof-parent{
+    text-align: center;
+    width: 100%;
+}
+.student-prof{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.prof-label{
+    background: lightgreen;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+.mypage-label{
+    width: 40%;
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: top;
+}
+.mypage-form-item{
+    width: 60%;
+    display: inline-block;
+}
+/*サブ画像編集ページ*/
+.edit-sub-parent{
+    width: 80%;
+    max-width: 80%;
+    margin-left: 10%;
+}
+.edit-sub{
+    width: 49%;
+    margin-left: 1%;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+.edit-sub-img-parent{
+    width: 100%;
+    min-width: 100%;
+}
+.edit-sub-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.select-sub-input{
+    width: 10%;
+    font-size: 12px;
+}
+.change-sub-btn{
+    width: 10%;
+    font-size: 12px;
+}
+.edit-modal-back{
+    background-color: black;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 200%;
+    height: 1000px;
+    display: none;
+}
+.edit-modal{
+    border-radius: 20px;
+    background-color: white;
+    z-index: 999999;
+    position: fixed;
+    top: 50px;
+    width: 80%;
+    height: 500px;
+    left: 10%;
+    display: none;
+}
+/*-----------------------------------------------------------------------------*/
+/*チャットポストページ*/
+.chat-parent{
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 200px;
+    min-height: 520px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 1px gray;
+    padding: 10px;
+}
+.chat-list{
+    width: 100%;
+    white-space: nowrap;
+    height: 60px;
+}
+.chat-anchor{
+    font-size: larger;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    width: 100%;
+    cursor: pointer;
+}
+.chat-list:hover{
+    background-color: #dddddd;
+}
+.chat-icon-parent{
+    width: 30%;
+    border: none;
+    display: inline-block;
+    padding-top: 5px;
+}
+.chat-icon{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+.chat-name{
+    width: 70%;
+    font-size: 25px;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 15px;
+    text-align: left;
+}
+/*-----------------------------------------------------------------------------*/
+/*チャットページ*/
+.messages{
+    margin-bottom: 200px;
+    word-wrap: break-word;
+    color: gray;
+}
+
+.my-message{
+    border: gray solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 90%;
+}
+.coach-message{
+    border: gray solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 90%;
+}
+.my-message div,.coach-message div{
+    font-weight: bold;
+    font-size: large;
+}
+.message-form{
+    width: 80%;
+    position: fixed;
+    bottom: 10px;
+    z-index: 1030;
+    left: 10%;
+}
+.message-item{
+    width: 70%;
+    height: 30px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    vertical-align: top;
+}
+.message-icon{
+    width: 50px;height:50px;object-fit: cover;border-radius: 50%;
+}
+.message-content{
+    font-size: 18px !important;
+    font-weight: 400 !important;
+}
+.message-btn{
+    background-color: lightgrey;
+    font-weight: bold;
+    font-size: large;
+    width: 10%;
+    height: 40px;
+    border-radius: 10px;
+    vertical-align: top;
+    padding: 5px;
+}
+@media screen and(max-width:650px){
+    .message-btn{
+        font-size: 12px;
+    }
+}
+
+/*-----------------------------------------------------------------------------*/
+/*お問い合わせページ*/
+.contact-message{
+    white-space: normal;
+}
+.form{
+    width: 100%;
+}
+.form-item{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid lightgreen;
+    background: none;
+    font-size: large;
+    font-weight: bold;
+}
+.form-item2{
+    border: 2px solid lightgreen;
+    border-radius: 10px;
+    background: none;
+    font-size: large;
+    font-weight: bold;
+}
+.form-item:focus{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid lightgreen;
+}
+.form-area{
+    border: 2px solid lightgreen;
+    border-radius: 20px;
+    background: none;
+    font-size: large;
+    font-weight: bold;
+}
+.contact-txt{
+    background-color: lightgrey;
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
+}
+.confirm{
+    font-weight: bold;
+    font-size: large;
+}
+.contact-done-parent{
+    margin-top: 100px;
+}
+/*-----------------------------------------------------------------------------*/
+/*レッスンページ*/
+.lesson-card{
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
+    background-color: white;
+    box-shadow: 1px 1px gray;
+    margin: 10px 0 10px 10%;
+}
+.lesson-name{
+    font-size: 25px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+.lesson-fee{
+    margin-left: 50px;
+}
+.cancel-btn{
+    cursor: pointer;
+}
+.attendance-btn{
+    cursor: pointer;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    margin-left: 30px;
+    height: 40px;
+    border-radius: 5px;
+    width: 150px;
+}
+.to-payment-btn{
+    cursor: pointer;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+}
+.attendanced{
+    color: blue;
+}
+.cancel-btn:hover,
+.attendance-btn:hover,
+.to-payment-btn:hover{
+    opacity: 0.7;
+}
+/*お支払いページ*/
+.payment-parent{
+    text-align: center;
+}
+.payjp-button{
+    cursor: pointer;
+    width: 50% !important;
+}
+/*-----------------------------------------------------------------------------*/
+/*登録ページ*/
+.about-form{
+    margin-top: 50px;
+}
+.about-form,
+.pin-form,
+.personal-form,
+.confirm-form,
+.regi-done-parent{
+    text-align: center;
+}
+.recruit-point{
+    color: blue;
+}
+/*-----------------------------------------------------------------------------*/
+/*ログインページ*/
+.login-box{
+    border: gray 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+    box-shadow: 1px 1px gray;
+    border: none;
+    margin-top: 30px;
+}
+@media screen and (max-width:700px){
+    .login-title{
+        font-size:16px !important;
+    }
+}
+.login-form-item{
+    max-width: 90%;
+}
+.login-btn{
+    width: 80% !important;
+    border-radius: 10px;
+    border: none;
+    background-color: #008000	;
+    font-weight: 600;
+    font-size: larger;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+.login-btn:hover{
+    opacity: 0.7;
+}
+.make-new-nav{
+    font-size: large;
+    font-weight: bold;
+}
+.make-new-parent{
+    display: inline-block;
+}
+.make-new{
+    text-decoration: none;
+}
+.make-new:hover{
+    opacity: 0.5;
+}
+/*-----------------------------------------------------------------------------*/
+/*検索結果ページ*/
+
+/*-----------------------------------------------------------------------------*/
+/*プライバシーポリシーページ*/
+.terms{
+    font-weight: 200 !important;
+}
+/*-----------------------------------------------------------------------------*/
+/*退会ページ*/
+
+/*-----------------------------------------------------------------------------*/
+/*フッター*/
+.footer{
+    background-color: lightgreen;
+    text-align: center;
+    width: 100%;
+}
+.footer-box{
+    display: inline-block;
+}
+.footer-item{
+    list-style: none;
+}
+.footer-item a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.footer-item a:hover{
+    font-weight: bold;
+    color: grey;
+}
+.copy-right{
+    font-size: 12px;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*広告*/
+.ad{
+    white-space: normal;
+    width: 90%;
+    font-size: 15px;
+}
+.ad-img{
+    width: auto;
+    object-fit: cover;
+    position: fixed;
+}
+
+
